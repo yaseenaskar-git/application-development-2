@@ -1,9 +1,83 @@
 body{
     background-color: gray;
+    
 }
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+body h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body article h1{
+    font-family: "Georgia", "Times New Roman";
+    line-height: 50%;
+    text-align: center;
+
+}
+
+body > article p{
+    text-align: center;
+    font-size: larger;
+
+}
+
+body > header a{
+    background-color: red;
+    color: white;
+    line-height: 200%;
+    font-weight: bolder;
+}
+
+body > header a:hover {
+    background-color: black;
+    color: yellow;
+}
+
+body header nav ul{
+    display: flex;          /* Aligns list items horizontally */
+    list-style-type: none;  /* Removes the default bullet points */
+    gap: 30px;  
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
 main h2{
-    color: red;
+    color: white;
 }
+
 section h2{
+    display: inline-block;
     background-color: yellow;
+}
+body section table{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+body section th,
+body section td {
+    min-width: 170px;
+    padding: 2px;
+    text-align: center;
+}
+
+body footer hr{
+    border: 1px solid black;
+}
+
+body footer section a:hover {
+    background-color: black;
+    color: yellow;
+}
+
+body footer img{
+    border-radius: 100%;
+    padding: 20px;
+    width: 200px;
 }
