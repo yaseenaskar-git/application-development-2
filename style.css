@@ -1,0 +1,9 @@
+body{
+    background-color: gray;
+}
+main h2{
+    color: red;
+}
+section h2{
+    background-color: yellow;
+}
