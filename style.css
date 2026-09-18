@@ -46,6 +46,15 @@ body header nav ul{
     margin: 5px;
 }
 
+main {
+    display: flex;
+    gap: 30px;
+}
+
+main article {
+    flex: 1;
+}
+
 main h2{
     color: white;
 }
