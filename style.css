@@ -37,10 +37,12 @@ body > header a:hover {
     color: yellow;
 }
 
-body header nav ul{
-    display: flex;          /* Aligns list items horizontally */
-    list-style-type: none;  /* Removes the default bullet points */
-    gap: 30px;  
+body header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
     border: 2px solid black;
     padding: 5px;
     margin: 5px;
