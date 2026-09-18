@@ -87,8 +87,13 @@ body footer section a:hover {
     color: yellow;
 }
 
-body footer img{
+body footer img {
     border-radius: 100%;
-    padding: 20px;
     width: 200px;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
 }
