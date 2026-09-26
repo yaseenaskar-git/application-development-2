@@ -26,3 +26,18 @@ if (selectedService === "Strength and Conditioning") {
     finalPrice = 85
     console.log(`Cart: `,selectedService, `Total Price: `,finalPrice)
 }
+
+let monthsNumber = 2; //set to 2 for testing
+let totalPrice = 0;
+
+function totalPriceCalc(finalPrice, monthsNumber) {
+    
+    let totalPrice = finalPrice * monthsNumber
+    let result = totalPrice
+    console.log(totalPrice)
+
+    return result;
+}
+
+totalPriceCalc(50, 2)
+totalPriceCalc(85, 3)
