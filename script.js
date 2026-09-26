@@ -14,3 +14,15 @@ console.log(typeof nutritionPrice);
 console.log(typeof serviceOne);
 console.log(typeof sandcPrice);
 console.log(typeof isAvailable);
+
+let selectedService = `Strength and Conditioning`; 
+//set to strength and conditioning for testing
+let finalPrice = 0;
+
+if (selectedService === "Strength and Conditioning") {
+    finalPrice = 50
+    console.log(`Cart: `,selectedService, `Total Price: `,finalPrice)
+} else if (selectedService === "Strength and Conditioning + Nutrition") {
+    finalPrice = 85
+    console.log(`Cart: `,selectedService, `Total Price: `,finalPrice)
+}
