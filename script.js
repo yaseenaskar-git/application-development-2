@@ -41,3 +41,28 @@ function totalPriceCalc(finalPrice, monthsNumber) {
 
 totalPriceCalc(50, 2)
 totalPriceCalc(85, 3)
+
+//Array
+
+const services = [
+    "Strength and Conditioning",
+    "Nutrition Coaching and Planning",
+    "Mental Performance"
+];
+
+console.log(services[0]);
+
+//Array loop
+for (let service of services) {
+    console.log(service);
+}
+
+//Object
+const service = {
+    name: "Strength and Conditioning",
+    price: 50,
+    available: true
+};
+
+console.log(service.name);
+console.log(service.price);
