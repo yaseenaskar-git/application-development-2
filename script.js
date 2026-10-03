@@ -66,3 +66,13 @@ const service = {
 
 console.log(service.name);
 console.log(service.price);
+
+//Events and Document Object Model
+const serviceOptions = document.querySelectorAll(".service-option");
+const selectionMessage = document.querySelector("#selection-message");
+const pricingSection = document.querySelector(".table-container");
+
+// for verification 
+console.log(serviceOptions)
+console.log(selectionMessage)
+console.log(pricingSection)
