@@ -119,4 +119,14 @@ serviceOptions.forEach(function(service) {
             }
     });
 
+    service.addEventListener("mouseover", function() {
+        service.classList.add("highlighted");
+    });
+
+    service.addEventListener("mouseout", function() {
+        service.classList.remove("highlighted");
+    });
+
 });
+
+

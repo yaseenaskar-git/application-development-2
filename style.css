@@ -25,16 +25,25 @@ body > article p{
 
 }
 
-body > header a{
+body > header .youtube-link{
     background-color: red;
     color: white;
     line-height: 200%;
     font-weight: bolder;
 }
 
-body > header a:hover {
+body > header .headerButtons {
+    color: black;
+    text-decoration: none;
+}
+
+body > header .youtube-link:hover {
     background-color: black;
     color: yellow;
+}
+
+body > header .headerButtons:hover{
+    text-decoration: underline;
 }
 
 body header nav ul {
@@ -121,4 +130,8 @@ body footer img {
 
 .service-option {
     cursor: pointer;
+}
+
+.service-option.highlighted {
+    font-size: larger;
 }
