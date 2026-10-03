@@ -78,13 +78,45 @@ const pricingSection = document.querySelector(".table-container");
 //console.log(pricingSection)
 
 serviceOptions.forEach(function(service) {
-    
+
     service.addEventListener("click", function() {
 
         const serviceName = service.querySelector("td").textContent;
         const price = service.dataset.price;
 
         selectionMessage.textContent = `You selected ${serviceName} - $${price}/month`;
+
+        if (service.classList.contains("selected")) {
+            service.classList.remove("selected");
+            selectionMessage.textContent = "Select a package to see more information.";
+            
+            const confirmation = document.querySelector("#confirmation-message");
+
+            if (confirmation) {
+                confirmation.remove();
+            }
+        } else {
+            serviceOptions.forEach(function(item) {
+                item.classList.remove("selected");
+            });
+
+            //const confirmation = document.createElement("p");
+
+            //confirmation.textContent = "Package selected successfully!";
+            //pricingSection.append(confirmation);
+
+            let confirmation = document.querySelector("#confirmation-message");
+
+            if (!confirmation) {
+                confirmation = document.createElement("p");
+                confirmation.id = "confirmation-message";
+                pricingSection.append(confirmation);
+            }
+
+            confirmation.textContent = "Package selected successfully!";
+
+            service.classList.add("selected");
+            }
     });
 
 });

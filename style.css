@@ -112,3 +112,13 @@ body footer img {
         padding: 10px;
     }
 }
+
+/*Events and document object models*/
+.service-option.selected {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.service-option {
+    cursor: pointer;
+}
