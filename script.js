@@ -73,12 +73,18 @@ const selectionMessage = document.querySelector("#selection-message");
 const pricingSection = document.querySelector(".table-container");
 
 // for verification 
-console.log(serviceOptions)
-console.log(selectionMessage)
-console.log(pricingSection)
+//console.log(serviceOptions)
+//console.log(selectionMessage)
+//console.log(pricingSection)
 
 serviceOptions.forEach(function(service) {
+    
     service.addEventListener("click", function() {
-        selectionMessage.textContent = "You have selected 'service' - 'price/month' ";
+
+        const serviceName = service.querySelector("td").textContent;
+        const price = service.dataset.price;
+
+        selectionMessage.textContent = `You selected ${serviceName} - $${price}/month`;
     });
+
 });
