@@ -76,3 +76,9 @@ const pricingSection = document.querySelector(".table-container");
 console.log(serviceOptions)
 console.log(selectionMessage)
 console.log(pricingSection)
+
+serviceOptions.forEach(function(service) {
+    service.addEventListener("click", function() {
+        selectionMessage.textContent = "You have selected 'service' - 'price/month' ";
+    });
+});
