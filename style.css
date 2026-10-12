@@ -135,3 +135,74 @@ body footer img {
 .service-option.highlighted {
     font-size: larger;
 }
+
+/* Consultation form layout */
+#consultation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Form labels */
+#consultation-form > label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Text inputs and dropdown */
+#consultation-form input[type="text"],
+#consultation-form input[type="email"],
+#consultation-form select,
+#consultation-form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+/* Radio button groups */
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-option label {
+    cursor: pointer;
+}
+
+/* Submit button */
+#consultation-form button {
+    margin-top: 15px;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Feedback messages */
+#error-message,
+#success-message {
+    max-width: 500px;
+    margin: 10px auto;
+    overflow-wrap: anywhere;
+}
+
+#error-message {
+    color: darkred;
+}
+
+#success-message {
+    color: darkgreen;
+}

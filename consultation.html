@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Consultation - DontJustTrain</title>
+    <title>Schedule a Consultation</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -10,9 +10,65 @@
 <body>
 
     <article>
-        <h1>Schedule a Consultation</h1>
-        <p>Page under construction.</p>
+      <h1>DontJustTrain's Website</h1>
+      <p>Shaping characters, not just athletes!</p> 
     </article>
+
+    <header> 
+        <a class="youtube-link" href="https://www.youtube.com/@DontJustTrain">Visit our YouTube channel!</a>
+        <nav>
+      
+            <ul>
+                <li><a class = "headerButtons" href ="index.html">Home</a></li>
+                <li><a class = "headerButtons">pricing</a></li>
+                <li><a class = "headerButtons"> Purchase Programs</a></li>
+                <li><a class= "headerButtons" href="consultation.html">Schedule consultation call</a></li>
+            </ul>
+        
+        </nav>
+
+    </header>
+
+    <form id="consultation-form">
+
+    <label for="full-name">Full Name:</label>
+    <input type="text" id="full-name" name="fullName" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">Age Range:</label>
+    <select id="age" name="age" required>
+        <option value="">Select your age range</option>
+        <option value="Under 16">Under 16</option>
+        <option value="16-18">16–18</option>
+        <option value="18-40">18–40</option>
+        <option value="40+">40+</option>
+    </select>
+
+    <p>Do you compete in a sport?</p>
+
+    <div class="radio-option">
+        <input type="radio" id="sport-yes" name="athleteSport" value="Yes">
+        <label for="sport-yes">Yes</label>
+    </div>
+
+    <div class="radio-option">
+        <input type="radio" id="sport-no" name="athleteSport" value="No">
+        <label for="sport-no">No</label>
+    </div>
+
+    <label for="details">Briefly tell us why you want to schedule this consultation:</label>
+    <textarea id="details" name="details" rows="4" cols="40"
+    placeholder="Type your answer here..."></textarea>
+
+    <button type="submit">Submit Consultation Request</button>
+
+    </form>
+
+<p id="error-message" role="alert"></p>
+
+<p id="success-message" role="status"></p>
 
 </body>
 
