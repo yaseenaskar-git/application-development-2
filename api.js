@@ -12,7 +12,7 @@ async function getPosts() { //creating a function
 
     try {
     // Fetch the data
-    const response = await fetch("https://jsonplaceholder.typicode.com/postsidk?_limit=5");
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5");
 
     // Check response.ok
     if (response.ok === false) {
@@ -25,8 +25,21 @@ async function getPosts() { //creating a function
         // Display the success message
         loadingMessage.textContent = "Posts loaded successfully!";
 
-        // Display the data in the console for now
-        console.log(posts);
+        // Display each post on the webpage
+        posts.forEach(function(post) {
+            const postElement = document.createElement("article");
+
+            const postTitle = document.createElement("h3");
+            postTitle.textContent = post.title;
+
+            const postBody = document.createElement("p");
+            postBody.textContent = post.body;
+
+            postElement.appendChild(postTitle);
+            postElement.appendChild(postBody);
+
+            postsContainer.appendChild(postElement);
+        });
     }
 
     } catch (error) {
